@@ -34,8 +34,10 @@ Namespace Q205699
 			childForm.Text = "Form" & childCount
 
 			Dim label As New LabelControl()
-            label.AutoSizeMode = LabelAutoSizeMode.None
-            label.Text = "Form" & childCount
+			label.AutoSizeMode = LabelAutoSizeMode.None
+'INSTANT VB WARNING: An assignment within expression was extracted from the following statement:
+'ORIGINAL LINE: label.Text = "Form" + childCount++;
+			label.Text = "Form" & childCount
 			childCount += 1
 			childForm.Controls.Add(label)
 			label.Dock = DockStyle.Fill
