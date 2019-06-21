@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace Q205699
+﻿Namespace Q205699
 	Partial Public Class MainForm
 		''' <summary>
 		''' Required designer variable.
@@ -27,19 +25,13 @@ Namespace Q205699
 		Private Sub InitializeComponent()
 			Me.components = New System.ComponentModel.Container()
 			Me.xtraTabbedMdiManager1 = New DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(Me.components)
-			Me.clicksTimer = New System.Windows.Forms.Timer(Me.components)
 			CType(Me.xtraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' xtraTabbedMdiManager1
 			' 
 			Me.xtraTabbedMdiManager1.MdiParent = Me
-'			Me.xtraTabbedMdiManager1.MouseDown += New System.Windows.Forms.MouseEventHandler(Me.OnXtraTabbedMdiManagerMouseDown);
-			' 
-			' clicksTimer
-			' 
-			Me.clicksTimer.Interval = 500
-'			Me.clicksTimer.Tick += New System.EventHandler(Me.OnClicksTimerTick);
+			Me.xtraTabbedMdiManager1.UseDocumentSelector = DevExpress.Utils.DefaultBoolean.True
 			' 
 			' MainForm
 			' 
@@ -56,8 +48,7 @@ Namespace Q205699
 
 		#End Region
 
-		Private WithEvents xtraTabbedMdiManager1 As DevExpress.XtraTabbedMdi.XtraTabbedMdiManager
-		Private WithEvents clicksTimer As System.Windows.Forms.Timer
+		Private xtraTabbedMdiManager1 As DevExpress.XtraTabbedMdi.XtraTabbedMdiManager
 	End Class
 End Namespace
 

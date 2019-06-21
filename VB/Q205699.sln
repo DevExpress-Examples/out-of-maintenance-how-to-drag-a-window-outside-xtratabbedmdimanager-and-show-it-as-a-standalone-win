@@ -1,5 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Q205699", "Q205699\Q205699.vbproj", "{0D19FF8C-1913-4733-B080-2F60784A1AFD}"
 EndProject
 Global
@@ -15,5 +17,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37EDEE82-371D-4A11-A29F-3EBB7CA8B34B}
 	EndGlobalSection
 EndGlobal
